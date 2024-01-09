@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../Oefening%201.1..js"></script>
+</head>
+<body>
+<p id="tekst"></p>
+
+<script>
+  const paragraaf = document.getElementById("tekst");
+  let digital2 = [
+    "Internet of things",
+    "Programmeren",
+    "Systemen en netwerkbeheer",
+    "Digitale vormgeving",
+    "Bachelor Multimedia- en Communicatietechnologie",
+  ];
+  let lengtedigital = digital2.length;
+  paragraaf.innerText = "Dit zijn de opleidingen: ";
+  for (let i = 0; i < lengtedigital; i++) {
+    paragraaf.innerText += "\n" + digital2[i] + " ";
+  }
+</script>
+
+</body>
+</html>
